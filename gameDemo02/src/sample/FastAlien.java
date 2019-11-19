@@ -10,7 +10,6 @@ public class FastAlien extends Alien {
         super(Config.FAST_ALIEN_HEALTH, Config.FAST_ALIEN_SPEED, "File:./image/Pixel-Alien-7.png");
     }
 
-
     private FastAlien(int health, int speed, String fileName) {
         super(Config.FAST_ALIEN_HEALTH, 1, "File:./image/Pixel-Alien-7.png");
     }

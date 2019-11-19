@@ -57,7 +57,7 @@ public class gameField  {
         map = new int[map_height][map_width]; // tạo ma trận trên sân chơi
         try {
             // đọc file txt là ma trận 2 chiều chứa đường đi
-            FileReader fileReader = new FileReader("C:\\Users\\ADMIN\\IdeaProjects\\gameDemo02-12-11(1)\\gameDemo02\\src\\field.txt");
+            FileReader fileReader = new FileReader("C:\\Users\\ADMIN\\IdeaProjects\\gameDemo02-12-11(1)\\gameDefenseTower\\src\\field.txt");
 
             Scanner in = new Scanner(fileReader);
             while (in.hasNextInt()) {
@@ -119,7 +119,7 @@ public class gameField  {
 
             initWaveEnemy(++level, num_alien_wave);
 
-            timer1.run();
+            timer1.run();// delay sau mỗi wave
 
         }else if(alienList.size() == 0 && level == 4){
             System.out.println("game over");

@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class BossAlien extends Alien {
     public BossAlien() {
-        super(Config.BOSS_ALIEN_HEALTH, Config.BOSS_ALIEN_SPEED, "File:./image/Pixel-Boss-Alien.png");
+        super(Config.BOSS_ALIEN_HEALTH, Config.BOSS_ALIEN_SPEED, "File:./image/Boss-Alien.png");
     }
 
     private BossAlien(int health, int speed, String fileName) {

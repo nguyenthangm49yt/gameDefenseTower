@@ -118,10 +118,14 @@ public abstract class Alien {
             double deltaX = nextWayPoint.x - x;
             double deltaY = nextWayPoint.y - y;
 
-            if (deltaX > speed) direction = Direction.RIGHT;
-            else if (deltaX < -speed) direction = Direction.LEFT;
-            else if (deltaY > speed) direction = Direction.DOWN;
-            else if (deltaY <= -speed) direction = Direction.UP;
+            if (deltaX > speed)
+                direction = Direction.RIGHT;
+            else if (deltaX < -speed)
+                direction = Direction.LEFT;
+            else if (deltaY > speed)
+                direction = Direction.DOWN;
+            else if (deltaY <= -speed)
+                direction = Direction.UP;
         }
     }
 

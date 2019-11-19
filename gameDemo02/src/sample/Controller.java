@@ -29,6 +29,7 @@ public final class Controller extends AnimationTimer {
 
     }
 
+    // game loop
     @Override
     public void handle(long now) {
 

@@ -15,6 +15,7 @@ public class Bullet {
     public int size = 15;
 
     public Bullet(){};
+
     public Bullet(int x, int y, Alien alien, int id_tower){
         this.x = x + Config.TILE_SIZE /2;
         this.y = y + Config.TILE_SIZE /2;
@@ -37,6 +38,7 @@ public class Bullet {
 
 
     }
+
     public void update(){
 
         this.distanceToAlien = Alien.distance(x,y, alien.x  + alien.size/2, alien.y + alien.size/2);
@@ -51,15 +53,18 @@ public class Bullet {
             isActive = false;
         }
     }
+
     public void setSpeed(int v){
         this.speed = v;
     }
+
     public void makeDamage(Alien alien){
         //sound
         Effect.playSound_bomb();
         // decrease health of alien
         alien.decreaseHealth(this.damage);
     }
+
     public void draw(GraphicsContext gc){
         update();
         gc.drawImage(this.img, this.x - size/2 , this.y - size/2, this.size, this.size);

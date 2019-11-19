@@ -30,8 +30,6 @@ public class Main extends Application {
         primaryStage.setTitle(Config.GAME_NAME);
         primaryStage.show();
 
-
-
     }
     public static void StartPlayGame(Stage pt){
         // sound
@@ -79,7 +77,8 @@ public class Main extends Application {
 
         //hien thi main menu
         root1.getChildren().addAll(canvas,background, playButton, exitButton);
-         primaryStage.setScene(new Scene(root1));
+        primaryStage.setTitle(Config.GAME_NAME);
+        primaryStage.setScene(new Scene(root1));
     }
 
     public static Button CreateButton(String name, int x, int y, int w, int h){
