@@ -4,6 +4,7 @@ bài tập lớn - Nguyễn Minh Thắng - Trần Nguyễn Phương Nam
 + Trần Nguyễn Phương Nam : tìm tài liệu tham khảo, bổ sung, góp ý, tham gia code phụ những phần việc được giao
 ###### Tham khảo :
 + cách di chuyển của enemy trên đường đi
+https://github.com/bqcuong/towerdefense-starter/tree/master/src/main/java/net/bqc/towerdefense
 + tham khảo code mẫu để biết các class cần có trong code mẫu
 ###### Cách chơi:
 + khi mở game sẽ hiện lên main menu, ấn "Play Now" để chơi.
